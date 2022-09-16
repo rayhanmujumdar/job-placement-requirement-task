@@ -1,17 +1,35 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useAuthState } from "react-firebase-hooks/auth";
+import { signOut } from "firebase/auth";
+import auth from "../../../firebase.init.js/firebase.init";
+import Loading from "../../common/Loading";
 
 export default function Header() {
+  const [user, loading, error] = useAuthState(auth);
+  const handleSignOut = () => {
+    console.log("okay");
+    signOut(auth);
+  };
+  if (loading) {
+    return <Loading></Loading>;
+  }
   const menuItem = (
     <>
       <li>
-        <Link to="/" className="font-semibold text-lg">Home</Link>
+        <Link to="/" className="font-semibold text-lg">
+          Home
+        </Link>
       </li>
       <li>
-        <Link to="about" className="font-semibold text-lg">About</Link>
+        <Link to="about" className="font-semibold text-lg">
+          About
+        </Link>
       </li>
       <li>
-        <Link to="favorite" className="font-semibold text-lg">Favorite</Link>
+        <Link to="favorite" className="font-semibold text-lg">
+          Favorite
+        </Link>
       </li>
     </>
   );
@@ -43,14 +61,27 @@ export default function Header() {
           </ul>
         </div>
         <div>
-          <Link to="/" className="btn btn-ghost normal-case text-xl bg-red-500 text-white">FindCode</Link>
+          <Link
+            to="/"
+            className="btn btn-ghost normal-case text-xl bg-red-500 text-white"
+          >
+            FindCode
+          </Link>
         </div>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal p-0">{menuItem}</ul>
       </div>
       <div className="navbar-end">
-        <a className="btn btn-success">Sign in</a>
+        {user ? (
+          <button onClick={handleSignOut} className="btn btn-success">
+            Sign out
+          </button>
+        ) : (
+          <Link to="sign-in" className="btn btn-success">
+            Sign In
+          </Link>
+        )}
       </div>
     </div>
   );
