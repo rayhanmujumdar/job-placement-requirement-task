@@ -31,8 +31,8 @@ const SignIn = () => {
     });
   }
   return (
-    <div className="flex justify-center items-center h-[80vh]">
-      <button onClick={signIn} className="btn btn-wide">
+    <div  className="flex justify-center items-center h-[80vh]">
+      <button onClick={signIn}  className="btn btn-wide">
         Google Sign in
       </button>
     </div>

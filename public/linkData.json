@@ -1,0 +1,65 @@
+[
+    {
+      "title": "The 10 Best Beginner Projects for New Programmers",
+      "link": "https://www.makeuseof.com/tag/beginner-programming-projects/#beginner-programming-projects",
+      "key": [
+        "#javascript",
+        "#code",
+        "#programming"
+      ]
+    },
+    {
+      "title": "React all event",
+      "link": "https://reactjs.org/docs/events.html#form-events",
+      "key": [
+        "#javascript",
+        "#code",
+        "#programming"
+      ]
+    },
+    {
+      "title": "Your 2022 Guide to Writing a Software Requirements Specification (SRS) Document",
+      "link": "https://relevant.software/blog/software-requirements-specification-srs-document/",
+      "key": [
+        "#javascript",
+        "#code",
+        "#programming"
+      ]
+    },
+    {
+      "title": "Iterators and generators",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators",
+      "key": [
+        "#javascript",
+        "#code",
+        "#programming"
+      ]
+    },
+    {
+      "title": "JavaScript iterators and generators: A complete guide",
+      "link": "https://blog.logrocket.com/javascript-iterators-and-generators-a-complete-guide/",
+      "key": [
+        "#javascript",
+        "#code",
+        "#programming"
+      ]
+    },
+    {
+      "title": "What the heck is the event loop anyway? | Philip Roberts | JSConf EU",
+      "link": "https://www.youtube.com/watch?v=8aGhZQkoFbQ",
+      "key": [
+        "#javascript",
+        "#code",
+        "#programming"
+      ]
+    },
+    {
+      "title": "What the heck is the event loop anyway? | Philip Roberts | JSConf EU",
+      "link": "https://towardsdev.com/event-loop-in-javascript-672c07618dc9",
+      "key": [
+        "#javascript",
+        "#code",
+        "#programming"
+      ]
+    }
+  ]

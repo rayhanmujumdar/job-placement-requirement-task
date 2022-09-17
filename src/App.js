@@ -1,7 +1,5 @@
 import "./App.css";
-import Header from "./Components/Home/Header/Header";
 import About from "./Components/About/About";
-import Footer from "./Components/Home/Footer/Footer";
 import { Route, Routes } from "react-router-dom";
 import Favorite from "./Components/Favorite/Favorite";
 import Home from "./Components/Home/Home/Home";
@@ -11,6 +9,8 @@ import { Toaster } from "react-hot-toast";
 import RedirectsAuth from "./Hooks/RedirectsAuth";
 import { useAuthState } from "react-firebase-hooks/auth";
 import auth from "./firebase.init.js/firebase.init";
+import Header from "./Components/Header/Header";
+import Footer from './Components/Footer/Footer'
 
 function App() {
   const [user] = useAuthState(auth)
